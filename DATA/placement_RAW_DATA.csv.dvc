@@ -1,0 +1,5 @@
+outs:
+- md5: cc7290609e972cb02f183d6259682afc
+  size: 2179
+  hash: md5
+  path: placement_RAW_DATA.csv
