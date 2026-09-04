@@ -4,9 +4,7 @@ import matplotlib.pyplot as plt
 
 
 def load_data():
-    data=pd.read_csv(r'D:\Ai_Ml _projects\ML_OPS\DATA\placement_RAW_DATA.csv')
-
-
+    data=pd.read_csv(r"D:\Ai_Ml_projects\ML_OPS\DATA\placement_RAW_DATA.csv")
     print("the data is loaded sucessfully")
     print(data)
     return data

@@ -10,7 +10,7 @@ def train_model():
     return X_train,X_test,y_train,y_test 
 
 def Model():
-    X_train,X_test,y_train,y_test=train_model()
+    X_train,_,y_train,_=train_model()
     model=LinearRegression()
     model.fit(X_train,y_train)
 
@@ -19,7 +19,7 @@ def Model():
 
 def Save_model(model):
     f_model=dump(model,
-                 r"D:\Ai_Ml _projects\ML_OPS\MODEL\model.joblib"
+                 r"D:\Ai_Ml _projects\ML_OPS\Model\model.joblib"
                  )
 
     print("the model is saved sucessfully")

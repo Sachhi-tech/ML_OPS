@@ -1,0 +1,4 @@
+services:
+  placement-ml:
+    image: placement-ml:latest
+    container_name: placement-container
