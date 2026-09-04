@@ -32,3 +32,8 @@ jobs:
       - name: Check Python files
         run: |
           python -m compileall SRC
+      
+      - name : Run tests
+        run: |
+          pytest
+      
