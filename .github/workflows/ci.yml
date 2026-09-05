@@ -32,8 +32,11 @@ jobs:
       - name: Check Python files
         run: |
           python -m compileall SRC
-      
-      - name : Run tests
+
+      - name: Run tests
         run: |
           pytest
-      
+
+      - name: Build Docker image
+        run: |
+          docker build -t placement-ml .
