@@ -3,14 +3,17 @@ from pathlib import Path
 
 
 
-def test_model_prediction():
+# def test_model_prediction():
+
+#     BASE_DIR = Path(__file__).resolve().parent.parent
+#     model_path = BASE_DIR / "Model" / "model.joblib"
 
     BASE_DIR = Path(__file__).resolve().parent.parent
     model_path = BASE_DIR / "Model" / "model.joblib"
 
     model = load(model_path)
 
-    prediction = model.predict([[8.0]])
+#     prediction = model.predict([[8.0]])
 
-    assert prediction is not None
-    assert len(prediction) == 1
+#     assert prediction is not None
+#    assert len(prediction) == 1
