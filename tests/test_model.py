@@ -1,6 +1,6 @@
 from joblib import load
 from pathlib import Path
-from predict import BASE_DIR
+
 
 
 def test_model_prediction():
