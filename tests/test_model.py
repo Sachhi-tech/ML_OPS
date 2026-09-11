@@ -13,4 +13,4 @@
 #     prediction = model.predict([[8.0]])
 
 #     assert prediction is not None
-    # assert len(prediction) == 1
+#    assert len(prediction) == 1
