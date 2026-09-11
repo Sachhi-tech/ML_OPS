@@ -1,6 +1,7 @@
 from fastapi import FastAPI
 import numpy as np
 from joblib import load
+import pandas as pd
 
 
 model=load("Model/model.joblib")
@@ -17,7 +18,8 @@ else:
     def predict(input_data: float):
         try:
             # Convert the input string to a numpy array
-            prediction = model.predict(np.array([[input_data]]))
+            input_data = pd.DataFrame({"cgpa": [input_data]})
+            prediction = model.predict(input_data)
             return {"prediction": prediction.tolist()}
         except Exception as e:
             return {"error": str(e)}
